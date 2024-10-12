@@ -1,0 +1,53 @@
+.sign
+{
+    color: #fff;
+    width: 65%;
+}
+
+.sign h1
+{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+table
+{
+    width: 65%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+table td
+{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+table th
+{
+    padding: 10px;
+}
+
+.serch
+{
+    color: #fff;
+}
+
+
+@media screen and (max-width:992px) {
+    .sign{
+        width: 90%;
+        margin: auto;
+    }
+    table{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .search{
+        width: 75%;
+    }
+}

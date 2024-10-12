@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CURD SYSTEM</title>
+<style>
+    body
+    {
+        background-image: url(img/bg3.jpg);
+    }
+</style>
+</head>
+<body>
+   
+<div class=" m-auto my-5 sign">
+<h1 class="text-center mb-3">CRUD SYSTEM</h1>
+    <div class="form-group">
+    <label for="productName">Product Name :</label>
+    <input class="my-2 form-control bg-transparent text-light rounded-pill" id="productName" type="text">
+    <small class="text-white-50">Product Name Must Be Chars Only. </small>
+</div>
+
+<div class="form-group">
+    <label for="productPrice">Product Price :</label>
+    <input class="my-2 form-control bg-transparent text-light rounded-pill" id="productPrice" type="number">
+    <small class="text-white-50">Product Price Must Be Number Only. </small>
+</div>
+
+<div class="form-group">
+    <label for="productCategory">Product Category :</label>
+    <input class="my-2 form-control bg-transparent text-light rounded-pill" id="productCategory" type="text">
+    <small class="text-white-50">Product Category Must Be Chars Only. </small>
+</div>
+
+<div class="form-group">
+    <label for="productDescraption">Product Descraption :</label>
+    <input class="my-2 form-control bg-transparent text-light rounded-pill" id="productDescraption" type="text">
+    <small class="text-white-50">Product Descraption Must Be Chars Only. </small>
+</div>
+
+<button id="main" onclick="addProduct()" class="my-3 btn btn-outline-light rounded-pill">Add Product</button>
+</div>
+<div class="w-50 mx-auto serch">
+    <label for="Serch">Serch By Product Name :</label>
+    <input onkeyup="searchProduct(this.value)" class="form-control my-2 text-light rounded-pill bg-transparent" type="text" id="Serch">
+</div>
+
+
+<table class="table-responsive-sm m-auto my-5 text-center">
+
+    <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Descraption</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </thead>
+
+    <tbody id="tableBody">
+
+    </tbody>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
